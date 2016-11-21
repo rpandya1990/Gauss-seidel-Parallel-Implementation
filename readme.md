@@ -20,7 +20,7 @@ We can observe from the order of computaions for different elements of the matri
 See the below figure to get the idea.
 
 
-![Gauss Siedel Waves](https://raw.githubusercontent.com/rpandya1990/images/master/Screen%20Shot%202016-11-20%20at%206.58.06%20PM.png)
+![Gauss Siedel Waves](https://raw.githubusercontent.com/rpandya1990/Gauss-seidel-Parallel-Implementation/master/images/Image%204.png)
 
 
 > Blue lines represent the diagonals
@@ -75,7 +75,7 @@ Key Ideas:
 - Change is acceptable for applications utilizing the Gauss Siedel method
 
 We split the elements into red and black color scheme such that no red element depends on black and vice versa
-![Red Black color scheme](https://raw.githubusercontent.com/rpandya1990/images/master/Screen%20Shot%202016-11-20%20at%207.59.39%20PM.png)
+![Red Black color scheme](https://raw.githubusercontent.com/rpandya1990/Gauss-seidel-Parallel-Implementation/master/images/Image%205.png)
 
 Firstly, red cells are computed in parallely and then the black cells are computed. We repeat the process until we acheive the desired convergence.
 ```
@@ -116,11 +116,27 @@ Advantages:
 
 Disadvantages:
 - Approximate solution
+
 ### Analysis
 
-![General](https://raw.githubusercontent.com/rpandya1990/images/master/Screen%20Shot%202016-11-20%20at%2010.05.48%20PM.png)
+![General](https://raw.githubusercontent.com/rpandya1990/Gauss-seidel-Parallel-Implementation/master/images/Image%206.png)
 
-![Correctness](https://raw.githubusercontent.com/rpandya1990/images/master/Screen%20Shot%202016-11-20%20at%2010.28.07%20PM.png)
+![Correctness](https://raw.githubusercontent.com/rpandya1990/Gauss-seidel-Parallel-Implementation/master/images/Image%207.png)
+
+### Charts
+
+![SerialvsParallel](https://raw.githubusercontent.com/rpandya1990/Gauss-seidel-Parallel-Implementation/master/images/Image%201.png)
+
+![StrongScaling](https://raw.githubusercontent.com/rpandya1990/Gauss-seidel-Parallel-Implementation/master/images/Image%202.png)
+
+![Correctness](https://raw.githubusercontent.com/rpandya1990/Gauss-seidel-Parallel-Implementation/master/images/Image%203.png)
+
+### Observation
+
+- Red black performs very well for all range of Grid size
+- Red black is the fastest
+- Wave Solver is completely accurate and the result exactly matches the Serial Implementation
+- Approximate solution given by red black solver is acceptable
 
 ### Running the code
 
