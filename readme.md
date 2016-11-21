@@ -127,9 +127,6 @@ Disadvantages:
 To run the Parallel Wave Solver in ELF:
 
 ```sh
-$ salloc -n 32 -p development
-$ module load openmpi
-$ cd rp_835/midterm
 $ g++ -o wave_solver parallel_omp_wave.cpp -fopenmp
 $ ./wave_solver
 ```
@@ -137,9 +134,6 @@ $ ./wave_solver
 To run the Parallel Red and Black Solver in ELF:
 
 ```sh
-$ salloc -n 32 -p development
-$ module load openmpi
-$ cd rp_835/midterm
 $ g++ -o rb_solver parallel_rb.cpp -fopenmp
 $ ./wave_solver
 ```
