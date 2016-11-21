@@ -1,6 +1,3 @@
-# Raghav Pandya(rp835) - Midterm Report
-
-
 We first start by analyzing the problem which is also popularly known as the Gauss-Siedel or stencil operation.
 
 ### Identifying Dependencies
