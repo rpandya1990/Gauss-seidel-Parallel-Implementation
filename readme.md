@@ -148,6 +148,6 @@ To run the Parallel Red and Black Solver in ELF:
 
 ```sh
 $ g++ -o rb_solver parallel_rb.cpp -fopenmp
-$ ./wave_solver
+$ ./rb_solver
 ```
 
